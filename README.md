@@ -14,7 +14,9 @@ Assuming you have [New Xkit](https://github.com/new-xkit/XKit) installed:
       1. Click anywhere inside the editor
       2. Alt-tab to the Devtools Console
       3. Press Enter to input the line of code you typed earlier
-      4. Wait for a popup saying something like "Leave without saving?", and Cancel it
-2. In the Xkit editor, go to the JSON (Ctrl + 4) tab
-3. Paste the contents of [wunglr.json](new-xkit-7.9.2/wunglr.json)
-4. Click "Save" on the left (Ctrl + S)
+      4. Wait for a popup saying something like "Leave site? Changes may not be saved", and Cancel it
+2. In the Xkit editor, Click "New Extension" at the top left (Ctrl + E), and name it 'wunglr'
+3. Go to the JSON (Ctrl + 4) tab, and delete the existing JSON
+4. Paste the contents of [wunglr.json](new-xkit-7.9.2/wunglr.json)
+5. Click "Save" on the left (Ctrl + S)
+6. Refresh any tumblr tabs
