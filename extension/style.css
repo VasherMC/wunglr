@@ -6,7 +6,7 @@
 /* Individual Post/Reblog Body */
 /* [data-id] :has(>.GzjsW) {} except we don't want to rely on generated classnames*/
 
-.wunglr-post { position:relative; transition: visibility 1s steps(2,jump-none); }
+.wunglr-post { position:relative; display: inline-block; transition: visibility 1s steps(2,jump-none); }
 .wungled .wunglr-post { visibility:hidden; }
 
 /* images are visibility:visible -- add a transparency effect */
@@ -18,7 +18,9 @@ div:has(+.wunglr-post) { transition:opacity 1s steps(2,jump-none); }
 /* reblog headers are still clickable, though wungle has priority */
 
 /* Wungle text (firstchild of .wunglr-post) */
-.wunglr-post > :first-child { position:absolute; top:0; margin-top:0; overflow:visible; transform:scale(-1,1);
-  visibility:hidden; transition: visibility 1s steps(2,jump-none); z-index:1; }
-.wungled .wunglr-post > :first-child { visibility:visible; }
+.wunglr-post > .flipped-wungle:first-child {
+	position:absolute; top:0; overflow:visible; transform:scale(-1,1);
+	visibility:hidden; transition: visibility 1s steps(2,jump-none); z-index:1;
+}
+.wungled .wunglr-post > .flipped-wungle:first-child { visibility:visible; }
 
