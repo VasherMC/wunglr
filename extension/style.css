@@ -6,7 +6,8 @@
 /* Individual Post/Reblog Body */
 /* [data-id] :has(>.GzjsW) {} except we don't want to rely on generated classnames*/
 
-.wunglr-post { position:relative; display: inline-block; transition: visibility 1s steps(2,jump-none); }
+.wunglr-post { position:relative; transition: visibility 1s steps(2,jump-none); }
+span.wunglr-post { display: inline-block; }
 .wungled .wunglr-post { visibility:hidden; }
 
 /* images are visibility:visible -- add a transparency effect */
