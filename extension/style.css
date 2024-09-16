@@ -7,7 +7,8 @@
 /* [data-id] :has(>.GzjsW) {} except we don't want to rely on generated classnames*/
 
 .wunglr-post { position:relative; transition: visibility 1s steps(2,jump-none); }
-span.wunglr-post { display: inline-block; }
+/* Original Post (not a reblog) - fix layout on firefox */
+span.wunglr-post { display: inline-block; width: 100%; }
 .wungled .wunglr-post { visibility:hidden; }
 
 /* images are visibility:visible -- add a transparency effect */
