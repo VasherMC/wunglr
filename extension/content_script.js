@@ -39,11 +39,12 @@ function updateFlippedWungle(block) {
 
 function add_wungle_elems(){
 	/* dashboard has 1 extra div in the tree compared to blog-view on the dashboard */
+	/* reblogs from deactivated blogs have role=banner instead of role=link */
 	document.querySelectorAll(`
-  [data-id] article >div>div>div>span:not(:has(div>div[role="link"] div[aria-label="avatar"])):not(.wunglr-post),
-  [data-id] article >div>div>div>span>div>div[role="link"]+div:not(.wunglr-post),
-  [data-id] article     >div>div>span:not(:has(div>div[role="link"] div[aria-label="avatar"])):not(.wunglr-post),
-  [data-id] article     >div>div>span>div>div[role="link"]+div:not(.wunglr-post)
+  [data-id] article >div>div>div>span:not(:has(div>div:is([role="link"],[role="banner"]) div[aria-label="avatar"])):not(.wunglr-post),
+  [data-id] article >div>div>div>span>div>div:is([role="link"],[role="banner"])+div:not(.wunglr-post),
+  [data-id] article     >div>div>span:not(:has(div>div:is([role="link"],[role="banner"]) div[aria-label="avatar"])):not(.wunglr-post),
+  [data-id] article     >div>div>span>div>div:is([role="link"],[role="banner"])+div:not(.wunglr-post)
 `).forEach(block => {
 		block.classList.add("wunglr-post");
 		updateFlippedWungle(block);
@@ -64,7 +65,7 @@ function add_wungle_elems(){
 
 post_listener.observe(document.querySelector("body"), {childList: true, subtree: true});
 
-window.addEventListener("load", add_wungle_elems);
+add_wungle_elems(); /* content script is loaded on document idle */
 
 
 /* ------------------------- Editor functionality ------------------------- */
