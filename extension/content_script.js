@@ -52,6 +52,7 @@ function add_wungle_elems(){
 	document.querySelectorAll(`[data-id]:not(.wunglr-done)`).forEach(post=>{
 		post.classList.add("wunglr-done");
 		let btn_sec = post.querySelector("header[role] span:has(>button)");
+		if (!btn_sec) return;
 		let btn_el = document.createElement("button");
 		btn_el.innerText = "↶W";
 		btn_el.type = "button";
