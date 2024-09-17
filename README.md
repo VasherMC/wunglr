@@ -1,7 +1,28 @@
 # wunglr
-The hidden side of tumblr.
+The hidden side of tumblr. Inspired by [this tumblr post by morphimus](https://www.tumblr.com/morphimus/710837261845037056/it-looked-kinda-like-this-the-post-would-be-the).
 
-Click the <kbd>↶W</kbd> button to flip a post and see the hidden text written on the other side. Inspired by [this tumblr post by morphimus](https://www.tumblr.com/morphimus/710837261845037056/it-looked-kinda-like-this-the-post-would-be-the).
+Click the <kbd>↶W</kbd> button at the top right of a post to flip it, and see the hidden wungle text written on the other side.
+
+You can also wungle the current text selection in the post editor, with the added <kbd>W↷</kbd> (Wungle)/<kbd>↶W</kbd> (Unwungle) buttons (only appear when selecting text).
+
+If you want to remove wungle text and can't select the right text to unwungle in the post editor, you can use tumblr's HTML editor.
+
+## Installation
+Get from the Chrome Web Store (pending) or Firefox Addon Marketplace (pending).
+
+### Manual installation
+Manual installation is already possible, but you will not receive updates.
+
+Users of Chrome (and other chromium-based browsers, such as Edge, Opera, Brave, Vivaldi, etc) can download and install via Developer mode:
+1. Download the `extension` folder to your device
+2. Go to `chrome://extensions` and enable Developer mode (at top-right in Chrome)
+3. Click the "Load Unpacked" button (at top-left in Chrome) and select the `extension` folder
+
+Firefox users can only install as a Temporary extension,  which will be removed after closing the browser:
+1. Download the `extension` folder to your device
+2. Go to `about:debugging#/runtime/this-firefox`
+3. Click "Load Temporary Add-on" and select the `manifest.json` file
+
 
 ### Installation - New Xkit version
 Assuming you have [New Xkit](https://github.com/new-xkit/XKit) installed:
