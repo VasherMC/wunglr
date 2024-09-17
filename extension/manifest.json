@@ -10,5 +10,8 @@
     "js": ["content_script.js"],
     "css": ["style.css"],
     "matches": ["*://*.tumblr.com/*", "*://tumblr.com/*"]
-  }]
+  }],
+  "browser_specific_settings": {
+    "gecko":{"id":"wunglr@VasherMC.extensions"}
+  }
 }
