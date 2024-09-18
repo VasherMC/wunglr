@@ -8,10 +8,10 @@ You can also wungle the current text selection in the post editor, with the adde
 If you want to remove wungle text and can't select the right text to unwungle in the post editor, you can use tumblr's HTML editor.
 
 ## Installation
-Get from the Chrome Web Store (pending) or [Firefox Addon Marketplace](https://addons.mozilla.org/en-US/firefox/addon/wunglr/).
+Get from the [Chrome Web Store](https://chromewebstore.google.com/detail/wunglr/gbkaeeecnehigjlgdcogiimdbfgpoikd) or [Firefox Addon Marketplace](https://addons.mozilla.org/en-US/firefox/addon/wunglr/).
 
 ### Manual installation
-Manual installation is already possible, but you will not receive updates.
+Manual installation is also possible, but you will not receive any future updates.
 
 Users of Chrome (and other chromium-based browsers, such as Edge, Opera, Brave, Vivaldi, etc) can download and install via Developer mode:
 1. Download the `extension` folder to your device
